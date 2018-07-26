@@ -29,6 +29,18 @@ async def vguide(ctx):
 async def pcodes(ctx):
 	await ctx.send("Here are the San Andreas Penal Codes: https://docs.google.com/spreadsheets/d/1_HbwpqX9-QhGZ7oZkT3dmzW_O448hD86c-PqfmpvYIY/edit#gid=0")
 
+# This command prints out a list of quick links for ease of user
+@bot.command()
+async def links(ctx):
+    embed = discord.Embed(title="__State Police Quick Links__", description="_Used to convey quick links to important information about the State Police_", color=0x3D59AB)
+	
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
+	
+    embed.add_field(name="Standard Operating Procedures", value="[Click Here](https://docs.google.com/document/d/1KSx0TRJNOxV519Fn7saWGD6E9rIEKA2hWOa6U0BSWYY/edit)")
+    embed.add_field(name="Uniform and Vehicle Guidelines", value="[Click Here](https://docs.google.com/document/d/1KrCscKX3FfANuiBJadci9ElmYpFkz4BPlmNPLMYTir0/edit(")
+    embed.add_field(name="Penal Codes", value="[Click Here](https://docs.google.com/spreadsheets/d/1_HbwpqX9-QhGZ7oZkT3dmzW_O448hD86c-PqfmpvYIY/edit#gid=0)")
+	
+    await ctx.send(embed=embed)
 	
 	
 	
@@ -221,7 +233,7 @@ async def amu(ctx):
     embed.add_field(name="Leaders", value="Sergeant A. Spahalski and Colonel R. Brooks", inline=False)
     embed.add_field(name="Description", value="This unit is capable of utilising aircraft and watercraft to assist ground units in situations such as high speed vehicle pursuits, search operations and general patrols from both sea and air", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
-    embed.add_field(name="Application:", value="[AMU Application](https://docs.google.com/forms/d/e/1FAIpQLSedXP7YPHIExyo6JS1X-4tTbi14NoJIF4sCW9Q1SyPyO3konQ/viewform)", inline=False)
+    embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSedXP7YPHIExyo6JS1X-4tTbi14NoJIF4sCW9Q1SyPyO3konQ/viewform", inline=False)
 	
     await ctx.send(embed=embed)
 		
