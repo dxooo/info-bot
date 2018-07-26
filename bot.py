@@ -169,7 +169,7 @@ async def ted(ctx):
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Sergeant A. Mattis and Sergeant R. Westhouse", inline=False)
-    embed.add_field(name="Description", value="N/A", inline=False)
+    embed.add_field(name="Description", value="This division cracks down on traffic laws and pursuit techniques. T.E.D. has access to motorcycle and sports car units for pursuits", inline=False)
     embed.add_field(name="Application Status", value="Closed", inline=False)
     embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSf2rLH6NgRqE9-IgNjgEJNc-68b-u1OYA_y08EkBKFDw2Y51w/closedform", inline=False)
 	
