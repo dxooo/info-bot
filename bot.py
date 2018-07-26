@@ -36,6 +36,7 @@ async def info(ctx):
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 
     embed.add_field(name="Author", value="Sergeant M. Cortez (brandon#9648)")
+    embed.add_field(name="Disclaimer", value="If the bot stops working an update is being pushed to it or I broke something.")
 
     await ctx.send(embed=embed)
 
