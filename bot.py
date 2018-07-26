@@ -31,7 +31,7 @@ async def links(ctx):
 @bot.command()
 async def searchpc(ctx, *, arg):
     us_inpt = arg
-    with open('https://github.com/dxooo/info-bot/blob/master/penal.txt', 'r') as searchfile:
+    with open('/info-bot/penal.txt', 'r') as searchfile:
         for line in searchfile:
           if us_inpt in line:
 	    await ctx.send("Match Found")
