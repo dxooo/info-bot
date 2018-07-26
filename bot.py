@@ -233,7 +233,7 @@ async def ciu(ctx):
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Corporal E. Cane (Acting Commander) and Sergeant M. Anderson", inline=False)
-    embed.add_field(name="Description", value="Investigates fraudulent action, crime scenes and criminal actions. We take our job seriously, will you?", inline=False)
+    embed.add_field(name="Description", value="The Criminal Investigations Unit is a group of highly trained investigators who investigate vast amount of crimes. We investigate fraudulent action, crime scenes and other criminal actions. We take our investigations seriously, do you?", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
     embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSfmznYvwyrIesdVWKy0_oshviC7Xswj49utcygyGnwKFw1ukw/viewform", inline=False)
 	
