@@ -103,7 +103,7 @@ async def divisions(ctx):
     embed.add_field(name="01 Administration", value="Lead by MT J. Loggins and MT A. Vyrilis", inline=False)
     embed.add_field(name="02 Patrol", value="Lead by Lt. E. Burnett and 1stSgt A. Spahalski", inline=False)
     embed.add_field(name="03 Traffic Enforcement Division", value="Lead by Sgt A. Mattis and Sgt R. Westhouse", inline=False)
-    embed.add_field(name="04 K-9 Unit", value="Lead by Cpl J. Boudreaux (Acting)", inline=False)
+    embed.add_field(name="04 K-9 Unit", value="Lead by Cpl J. Boudreaux (Acting) and MT M. Anderson", inline=False)
     embed.add_field(name="05 Crime Suppression Unit", value="Lead by Sgt R. Reddington and MT A. Vyrilis", inline=False)
     embed.add_field(name="06 Aviation and Marine Unit", value="Lead by 1stSgt A. Spahalski and Col R. Brooks", inline=False)
     embed.add_field(name="07 Criminal Investigations Unit", value="Lead by Cpl E. Cane (Acting) and Sgt M. Anderson", inline=False)
@@ -181,7 +181,7 @@ async def k9(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="Leaders", value="Corporal J. Boudreaux (Acting Commander)", inline=False)
+    embed.add_field(name="Leaders", value="Corporal J. Boudreaux (Acting Commander) and Master Trooper M. Anderson", inline=False)
     embed.add_field(name="Description", value="N/A", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
     embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSdnkJYL-0QZI0WOfrd-kC68TOWPkKtA4HPQrUnpLQoSYRB_SQ/viewform", inline=False)
