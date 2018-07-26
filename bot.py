@@ -267,5 +267,5 @@ async def aca(ctx):
 	
 	
 	
-client.login(process.env.bot_token);	
+client.login(process.env.BOT_TOKEN);	
 bot.run('NDcxNzgwODg0MDE4ODg4NzE2.Djp07A.hXNPasOxBnfLjTRqlLdPFc-NRYU')
