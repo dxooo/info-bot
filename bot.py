@@ -36,7 +36,7 @@ async def searchpc(ctx, *, arg):
     abs = aabs121
     embed = discord.Embed(title="__State Police Quick Links__", description="_Used to convey quick links to important information about the State Police_", color=0x3D59AB)
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
-    embed.add_field(name=await ctx.send(abs), value="[Click Here]", inline=False)
+    embed.add_field(name=abs, value="[Click Here]", inline=False)
     await ctx.send(embed=embed)
    
 	
