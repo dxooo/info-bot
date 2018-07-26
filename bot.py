@@ -258,4 +258,4 @@ async def aca(ctx):
 
 	
 	
-bot.run(TOKEN)
+bot.run('NDcxNzgwODg0MDE4ODg4NzE2.DjrfPw.QmjFc2hXFQIAQopyRNSSjwicY_M')
