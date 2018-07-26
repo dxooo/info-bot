@@ -265,7 +265,14 @@ async def aca(ctx):
 	
 	
 	
-	
+client = discord.Client()
+
+@client.event
+async def on_message(message):
+    if message.content.startswith('!clear'):
+        tmp = await client.send_message(message.channel, 'Clearing messages...')
+        async for msg in client.logs_from(message.channel):
+            await client.delete_message(msg)	
 	
 	
 	
