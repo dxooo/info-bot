@@ -30,6 +30,7 @@ async def links(ctx):
 
 @bot.command()
 async def searchpc(ctx):
+    await client.send_message(message.channel, "Hello")
     kek = message.content[9:]
     with open('penal.txt', 'r') as searchfile:
     	for line in searchfile:
