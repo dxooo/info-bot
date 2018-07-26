@@ -30,9 +30,10 @@ async def links(ctx):
 
 @bot.command()
 async def searchpc(ctx, *, arg):
-    kek = await ctx.send(arg)
+    await ctx.send(arg)
+    aabs121 = arg
     
-    abs = kek 
+    abs = aabs121
     await ctx.send(abs)
    
 	
