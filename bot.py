@@ -26,7 +26,6 @@ async def links(ctx):
     embed.add_field(name="Divisional Placements", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/21-san-andreas-state-police-division-placements/)", inline=False)
     embed.add_field(name="Punitive Articles/Disciplinary Policy", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/79-san-andreas-state-police-punitive-articles-and-disciplinary-policy/)", inline=False)
 	
-    await client.delete_message(message)	
     await ctx.send(embed=embed)
 
 	
