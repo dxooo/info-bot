@@ -85,7 +85,7 @@ async def faq(ctx):
     embed.add_field(name="What Troop am I in?/Who is my Supervisor(s)?", value="Utilize [This](http://sasp.highspeed-gaming.com/index.php?/topic/21-san-andreas-state-police-division-placements/) to figure out what troop you're in, if you can't find yourself, utilize #support", inline=False)
     embed.add_field(name="What are the different Divisions?", value="!divisions to learn more", inline=False)
     embed.add_field(name="Where do I apply for Divisions?", value="!divinfo to learn more", inline=False)
-    embed.add_field(name="How do I get promoted?", value="Complete [This](https://docs.google.com/forms/d/e/1FAIpQLSdTN9DGGpIFcUX1rIOBJTimyEhE06oBtcIxvRVTt6PNCj09Qw/viewform) exam and wait to hear back from Command in regards to the status of it)", inline=False)
+    embed.add_field(name="How do I get promoted?", value="Complete [This](https://docs.google.com/forms/d/e/1FAIpQLSdTN9DGGpIFcUX1rIOBJTimyEhE06oBtcIxvRVTt6PNCj09Qw/viewform) exam and wait to hear back from Command in regards to the status of it", inline=False)
 	
 	
     await ctx.send(embed=embed)
