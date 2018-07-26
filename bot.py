@@ -33,7 +33,7 @@ async def vguide(ctx):
 async def info(ctx):
     embed = discord.Embed(title="__State Police Information Bot__", description="_Used to convey information about HighSpeed-Gaming's State Police_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 
     embed.add_field(name="Author", value="Sergeant M. Cortez (brandon#9648)")
 
@@ -51,7 +51,7 @@ bot.remove_command('help')
 async def help(ctx):
     embed = discord.Embed(title="__Help Box__", description="_You appear to need help, let me get you started._", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="!cmds", value="Type this command in chat to get started, this should get you where you need to go.", inline=False)
 	
@@ -62,7 +62,7 @@ async def help(ctx):
 async def cmds(ctx):
     embed = discord.Embed(title="__State Police Information Bot__", description="_List of commands are:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 
     embed.add_field(name="!sop", value="Gives the Standard Operating Procedures for the State Police", inline=False)
     embed.add_field(name="!vguide", value="Gives the Vehicle and Uniform Guidelines for the State Police", inline=False)
@@ -81,7 +81,7 @@ async def cmds(ctx):
 async def faq(ctx):
     embed = discord.Embed(title="__Frequently Asked Questions__", description="_Answers and links to FAQ:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="I want to report someone", value="Contact your Field/Troop or Unit Supervisor first, if you think it's a large issue and needs to be handled outside of your division contact IA here: http://sasp.highspeed-gaming.com/index.php?/forum/49-complaints-office/", inline=False)
     embed.add_field(name="What Troop am I in?/Who is my Supervisor(s)?", value="Utilize this (http://sasp.highspeed-gaming.com/index.php?/topic/21-san-andreas-state-police-division-placements/) to figure out what troop you're in, if you can't find yourself, utilize #support", inline=False)
@@ -98,7 +98,7 @@ async def faq(ctx):
 async def divisions(ctx):
     embed = discord.Embed(title="__State Police Divisions__", description="_Divisions within the State Police are:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="01 Administration", value="Lead by MT J. Loggins and MT A. Vyrilis", inline=False)
     embed.add_field(name="02 Patrol", value="Lead by Lt. E. Burnett and 1stSgt A. Spahalski", inline=False)
@@ -118,7 +118,7 @@ async def divisions(ctx):
 async def divinfo(ctx):
     embed = discord.Embed(title="__State Police Divisional Info__", description="_List of commands to learn more about each division:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="!adm", value="Command for more info about Administration", inline=False)
     embed.add_field(name="!pat", value="Command for more info about Patrol", inline=False)
@@ -139,7 +139,7 @@ async def divinfo(ctx):
 async def adm(ctx):
     embed = discord.Embed(title="__Administration Information__", description="_Some important information regarding the Administration division:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Master Trooper J. Loggins and Master Trooper A. Vyrilis", inline=False)
     embed.add_field(name="Application Status", value="Closed", inline=False)
@@ -151,7 +151,7 @@ async def adm(ctx):
 async def pat(ctx):
     embed = discord.Embed(title="__Patrol Information__", description="_Some important information regarding the Patrol division:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Lieutenant E. Burnett and First Sergeant A. Spahalski", inline=False)
     embed.add_field(name="Description", value="The main division within the State Police, housing every member of the State Police regardless of status within other divisions", inline=False)
@@ -165,7 +165,7 @@ async def pat(ctx):
 async def ted(ctx):
     embed = discord.Embed(title="__Traffic Enforcement Information__", description="_Some important information regarding the Traffic Enforcement division:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Sergeant A. Mattis and Sergeant R. Westhouse", inline=False)
     embed.add_field(name="Description", value="N/A", inline=False)
@@ -179,7 +179,7 @@ async def ted(ctx):
 async def k9(ctx):
     embed = discord.Embed(title="__K9 Information__", description="_Some important information regarding the K9 division:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Corporal J. Boudreaux (Acting Commander)", inline=False)
     embed.add_field(name="Description", value="N/A", inline=False)
@@ -193,7 +193,7 @@ async def k9(ctx):
 async def csu(ctx):
     embed = discord.Embed(title="__Crime Suppression Information__", description="_Some important information regarding the Crime Suppression division:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Sergeant R. Reddington and Master Trooper A. Vyrilis", inline=False)
     embed.add_field(name="Description", value="N/A", inline=False)
@@ -207,7 +207,7 @@ async def csu(ctx):
 async def amu(ctx):
     embed = discord.Embed(title="__Aviation and Marine Information__", description="_Some important information regarding the Aviation and Marine division:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Sergeant A. Spahalski and Colonel R. Brooks", inline=False)
     embed.add_field(name="Description", value="N/A", inline=False)
@@ -221,7 +221,7 @@ async def amu(ctx):
 async def ciu(ctx):
     embed = discord.Embed(title="__Criminal Investigations Information__", description="_Some important information regarding the Criminal Investigations division:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Corporal E. Cane (Acting Commander) and Sergeant M. Anderson", inline=False)
     embed.add_field(name="Description", value="N/A", inline=False)
@@ -235,7 +235,7 @@ async def ciu(ctx):
 async def tru(ctx):
     embed = discord.Embed(title="__Tactical Response Information__", description="_Some important information regarding the Tactical Response division:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Sergeant M. Cortez and Corporal T. Woods", inline=False)
     embed.add_field(name="Description", value="N/A", inline=False)
@@ -249,7 +249,7 @@ async def tru(ctx):
 async def aca(ctx):
     embed = discord.Embed(title="__Training Academy Information__", description="_Some important information regarding the Training Academy division:_", color=0x3D59AB)
 	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/376272498418778114/471833169864163328/341.png")
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Corporal B. Vance and Master Trooper J. Brown", inline=False)
     embed.add_field(name="Description", value="N/A", inline=False)
@@ -259,6 +259,7 @@ async def aca(ctx):
 	
     await ctx.send(embed=embed)
 			
+	
 	
 	
 	
