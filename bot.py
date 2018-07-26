@@ -27,6 +27,7 @@ async def links(ctx):
     embed.add_field(name="Punitive Articles/Disciplinary Policy", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/79-san-andreas-state-police-punitive-articles-and-disciplinary-policy/)", inline=False)
 	
     await ctx.send(embed=embed)
+    await client.delete_message(message)
 	
 	
 	
