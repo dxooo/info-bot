@@ -82,10 +82,10 @@ async def faq(ctx):
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="I want to report someone", value="Contact your Field/Troop or Unit Supervisor first, if you think it's a large issue and needs to be handled outside of your division contact IA here: http://sasp.highspeed-gaming.com/index.php?/forum/49-complaints-office/", inline=False)
-    embed.add_field(name="What Troop am I in?/Who is my Supervisor(s)?", value="Utilize this (http://sasp.highspeed-gaming.com/index.php?/topic/21-san-andreas-state-police-division-placements/) to figure out what troop you're in, if you can't find yourself, utilize #support", inline=False)
+    embed.add_field(name="What Troop am I in?/Who is my Supervisor(s)?", value="Utilize this ([Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/21-san-andreas-state-police-division-placements/)) to figure out what troop you're in, if you can't find yourself, utilize #support", inline=False)
     embed.add_field(name="What are the different Divisions?", value="!divisions to learn more", inline=False)
     embed.add_field(name="Where do I apply for Divisions?", value="!divinfo to learn more", inline=False)
-    embed.add_field(name="How do I get promoted?", value="Complete this exam and wait to hear back from Command in regards to the status of it: https://docs.google.com/forms/d/e/1FAIpQLSdTN9DGGpIFcUX1rIOBJTimyEhE06oBtcIxvRVTt6PNCj09Qw/viewform", inline=False)
+    embed.add_field(name="How do I get promoted?", value="Complete this exam and wait to hear back from Command in regards to the status of it: [Click Here](https://docs.google.com/forms/d/e/1FAIpQLSdTN9DGGpIFcUX1rIOBJTimyEhE06oBtcIxvRVTt6PNCj09Qw/viewform)", inline=False)
 	
 	
     await ctx.send(embed=embed)
@@ -156,7 +156,7 @@ async def pat(ctx):
     embed.add_field(name="Leaders", value="Lieutenant E. Burnett and First Sergeant A. Spahalski", inline=False)
     embed.add_field(name="Description", value="The main division within the State Police, housing every member of the State Police regardless of status within other divisions", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
-    embed.add_field(name="Application:", value="http://sasp.highspeed-gaming.com/index.php?/topic/25-san-andreas-state-police-application-format/", inline=False)
+    embed.add_field(name="Application:", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/25-san-andreas-state-police-application-format/)", inline=False)
 	
     await ctx.send(embed=embed)
 	
@@ -170,7 +170,7 @@ async def ted(ctx):
     embed.add_field(name="Leaders", value="Sergeant A. Mattis and Sergeant R. Westhouse", inline=False)
     embed.add_field(name="Description", value="This division cracks down on traffic laws and pursuit techniques. T.E.D. has access to motorcycle and sports car units for pursuits", inline=False)
     embed.add_field(name="Application Status", value="Closed", inline=False)
-    embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSf2rLH6NgRqE9-IgNjgEJNc-68b-u1OYA_y08EkBKFDw2Y51w/closedform", inline=False)
+    embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSf2rLH6NgRqE9-IgNjgEJNc-68b-u1OYA_y08EkBKFDw2Y51w/closedform)", inline=False)
 	
     await ctx.send(embed=embed)
 	
@@ -184,7 +184,7 @@ async def k9(ctx):
     embed.add_field(name="Leaders", value="Corporal J. Boudreaux (Acting Commander) and Master Trooper M. Anderson", inline=False)
     embed.add_field(name="Description", value="The mission of the K-9 unit is to provide assistance to on duty law enforcement using teamwork and a superior sense of smell and hearing. The K-9 unit works as a cohesive unit providing assistance in apprehension, searches, obtaining warrants,  locating narcotics, weapons, or even explosive devices.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
-    embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSdnkJYL-0QZI0WOfrd-kC68TOWPkKtA4HPQrUnpLQoSYRB_SQ/viewform", inline=False)
+    embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSdnkJYL-0QZI0WOfrd-kC68TOWPkKtA4HPQrUnpLQoSYRB_SQ/viewform)", inline=False)
 	
     await ctx.send(embed=embed)
 	
@@ -198,7 +198,7 @@ async def csu(ctx):
     embed.add_field(name="Leaders", value="Sergeant R. Reddington and Master Trooper A. Vyrilis", inline=False)
     embed.add_field(name="Description", value="The Crime Suppression Unit is a specialized investigative unit within the San Andreas State Police Department whose primary role is to monitor, document, investigate the crime, attempt to identify and arrest perpetrators, and prevent further criminal activity.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
-    embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSeAKv_TobhZFomfHyl-oUpTN2i5wHxjvsXND9AJCCbfZz7urA/viewform", inline=False)
+    embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSeAKv_TobhZFomfHyl-oUpTN2i5wHxjvsXND9AJCCbfZz7urA/viewform)", inline=False)
 	
     await ctx.send(embed=embed)	
 	
@@ -212,7 +212,7 @@ async def amu(ctx):
     embed.add_field(name="Leaders", value="Sergeant A. Spahalski and Colonel R. Brooks", inline=False)
     embed.add_field(name="Description", value="This unit is capable of utilising aircraft and watercraft to assist ground units in situations such as high speed vehicle pursuits, search operations and general patrols from both sea and air", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
-    embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSedXP7YPHIExyo6JS1X-4tTbi14NoJIF4sCW9Q1SyPyO3konQ/viewform", inline=False)
+    embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSedXP7YPHIExyo6JS1X-4tTbi14NoJIF4sCW9Q1SyPyO3konQ/viewform)", inline=False)
 	
     await ctx.send(embed=embed)
 		
@@ -226,7 +226,7 @@ async def ciu(ctx):
     embed.add_field(name="Leaders", value="Corporal E. Cane (Acting Commander) and Sergeant M. Anderson", inline=False)
     embed.add_field(name="Description", value="The Criminal Investigations Unit is a group of highly trained investigators who investigate vast amount of crimes. We investigate fraudulent action, crime scenes and other criminal actions. We take our investigations seriously, do you?", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
-    embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSfmznYvwyrIesdVWKy0_oshviC7Xswj49utcygyGnwKFw1ukw/viewform", inline=False)
+    embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSfmznYvwyrIesdVWKy0_oshviC7Xswj49utcygyGnwKFw1ukw/viewform)", inline=False)
 	
     await ctx.send(embed=embed)
 	
@@ -240,7 +240,7 @@ async def tru(ctx):
     embed.add_field(name="Leaders", value="Sergeant M. Cortez and Corporal T. Woods", inline=False)
     embed.add_field(name="Description", value="The Tactical Response unit is a group comprised of highly trained marksmen, negotiators and specialists prepared to take on high priority situations with the utmost care and expertise.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
-    embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSdDHdUCCGoGmoNdHNja9g7pFHhWLIIsTe6irmvJxCFEJpcfOg/viewform", inline=False)
+    embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSdDHdUCCGoGmoNdHNja9g7pFHhWLIIsTe6irmvJxCFEJpcfOg/viewform)", inline=False)
 	
     await ctx.send(embed=embed)
 		
@@ -254,8 +254,8 @@ async def aca(ctx):
     embed.add_field(name="Leaders", value="Corporal B. Vance and Master Trooper J. Brown", inline=False)
     embed.add_field(name="Description", value="Training Academy provides a training pipeline for the freshly accepted Cadets to prepare them.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
-    embed.add_field(name="Application: (FTO)", value="https://docs.google.com/forms/d/e/1FAIpQLSfL3z6xym5di9cqYERnRmvfygD4BRCuHv1mYB3p1e_icqGPdQ/viewform", inline=False)
-    embed.add_field(name="Application: (Instructor)", value="https://docs.google.com/forms/d/e/1FAIpQLSfD4awywhouEzHnNNi6hRQBrjYXdgcd9ZpcXieWRcUF3aYehw/viewform", inline=False)
+    embed.add_field(name="Application: (FTO)", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSfL3z6xym5di9cqYERnRmvfygD4BRCuHv1mYB3p1e_icqGPdQ/viewform)", inline=False)
+    embed.add_field(name="Application: (Instructor)", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSfD4awywhouEzHnNNi6hRQBrjYXdgcd9ZpcXieWRcUF3aYehw/viewform)", inline=False)
 	
     await ctx.send(embed=embed)
 			
