@@ -264,14 +264,7 @@ async def aca(ctx):
 	
 	
 	
-	
-@client.async_event
-def on_message_delete(message):
-	# WIP. Need to check for permissions
-	#await sendMessage(message.channel, "{} `I have deleted your message.`".format(message.author.mention))
-	pass
-	
-	
+
 	
 	
 bot.run('NDcxNzgwODg0MDE4ODg4NzE2.Djp07A.hXNPasOxBnfLjTRqlLdPFc-NRYU')
