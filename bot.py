@@ -183,7 +183,7 @@ async def k9(ctx):
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Corporal J. Boudreaux (Acting Commander) and Master Trooper M. Anderson", inline=False)
-    embed.add_field(name="Description", value="N/A", inline=False)
+    embed.add_field(name="Description", value=": The mission of the K-9 unit is to provide assistance to on duty law enforcement using teamwork and a superior sense of smell and hearing. The K-9 unit works as a cohesive unit providing assistance in apprehension, searches, obtaining warrants,  locating narcotics, weapons, or even explosive devices.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
     embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSdnkJYL-0QZI0WOfrd-kC68TOWPkKtA4HPQrUnpLQoSYRB_SQ/viewform", inline=False)
 	
