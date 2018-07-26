@@ -265,14 +265,11 @@ async def aca(ctx):
 	
 	
 	
-client = discord.Client()
-
-@client.event
-async def on_message(message):
-    if message.content.startswith('!clear'):
-        tmp = await client.send_message(message.channel, 'Clearing messages...')
-        async for msg in client.logs_from(message.channel):
-            await client.delete_message(msg)	
+@client.async_event
+def on_message_delete(message):
+	# WIP. Need to check for permissions
+	#await sendMessage(message.channel, "{} `I have deleted your message.`".format(message.author.mention))
+	pass
 	
 	
 	
