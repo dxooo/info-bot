@@ -253,7 +253,7 @@ async def aca(ctx):
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Corporal B. Vance and Master Trooper J. Brown", inline=False)
-    embed.add_field(name="Description", value="N/A", inline=False)
+    embed.add_field(name="Description", value="Training Academy provides a training pipeline for the freshly accepted Cadets to prepare them.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
     embed.add_field(name="Application: (FTO)", value="https://docs.google.com/forms/d/e/1FAIpQLSfL3z6xym5di9cqYERnRmvfygD4BRCuHv1mYB3p1e_icqGPdQ/viewform", inline=False)
     embed.add_field(name="Application: (Instructor)", value="https://docs.google.com/forms/d/e/1FAIpQLSfD4awywhouEzHnNNi6hRQBrjYXdgcd9ZpcXieWRcUF3aYehw/viewform", inline=False)
