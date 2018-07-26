@@ -10,25 +10,6 @@ async def on_ready():
     print(bot.user.id)
     print('------')
 
-	
-	
-	
-	
-# This command prints out a link to the SASP SOP	
-@bot.command()
-async def sop(ctx):
-	await ctx.send("Here are the Standard Operating Procedures for the San Andreas State Police: https://docs.google.com/document/d/1KSx0TRJNOxV519Fn7saWGD6E9rIEKA2hWOa6U0BSWYY/edit")
-
-# This command prints out a link to the SASP Uni & Veh Guides	
-@bot.command()
-async def vguide(ctx):
-	await ctx.send("Here are the Uniform and Vehicle Guidelines for the San Andreas State Police: https://docs.google.com/document/d/1KrCscKX3FfANuiBJadci9ElmYpFkz4BPlmNPLMYTir0/edit")
-	
-# This command prints out a link to the SASP Penal Codes
-@bot.command()
-async def pcodes(ctx):
-	await ctx.send("Here are the San Andreas Penal Codes: https://docs.google.com/spreadsheets/d/1_HbwpqX9-QhGZ7oZkT3dmzW_O448hD86c-PqfmpvYIY/edit#gid=0")
-
 # This command prints out a list of quick links for ease of user
 @bot.command()
 async def links(ctx):
@@ -82,9 +63,7 @@ async def cmds(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 
-    embed.add_field(name="!sop", value="Gives the Standard Operating Procedures for the State Police", inline=False)
-    embed.add_field(name="!vguide", value="Gives the Vehicle and Uniform Guidelines for the State Police", inline=False)
-    embed.add_field(name="!pcodes", value="Gives the San Andreas Penal Codes", inline=False)
+    embed.add_field(name="!links", value="Gives a list of important links for the State Police", inline=False)
     embed.add_field(name="!divisions", value="Gives the list of State Police Divisions and their Division Heads", inline=False)
     embed.add_field(name="!faq", value="Gives a list of info about Frequently Asked Questions", inline=False)
     embed.add_field(name="!info", value="Gives information about the bot", inline=False)
