@@ -31,11 +31,6 @@ async def links(ctx):
 @bot.command()
 async def searchpc(ctx):
        await bot.say("Hello")
-       kek = message.content[9:]
-       with open('penal.txt', 'r') as searchfile:
-        for line in searchfile:
-          if kek in line:
-	      await bot.say(line)
 	
 	
 	
