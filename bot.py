@@ -20,9 +20,9 @@ async def links(ctx):
     embed.add_field(name="Standard Operating Procedures", value="[Click Here](https://docs.google.com/document/d/1KSx0TRJNOxV519Fn7saWGD6E9rIEKA2hWOa6U0BSWYY/edit)")
     embed.add_field(name="Uniform and Vehicle Guidelines", value="[Click Here](https://docs.google.com/document/d/1KrCscKX3FfANuiBJadci9ElmYpFkz4BPlmNPLMYTir0/edit)")
     embed.add_field(name="Penal Codes", value="[Click Here](https://docs.google.com/spreadsheets/d/1_HbwpqX9-QhGZ7oZkT3dmzW_O448hD86c-PqfmpvYIY/edit#gid=0)")
-    embed.add_field(name="Roster", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/22-san-andreas-state-police-roster/))
-    embed.add_field(name="Divisional Placements", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/21-san-andreas-state-police-division-placements/))
-    embed.add_field(name="Punitive Articles/Disciplinary Policy", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/21-san-andreas-state-police-division-placements/))
+    embed.add_field(name="Roster", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/22-san-andreas-state-police-roster/)")
+    embed.add_field(name="Divisional Placements", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/21-san-andreas-state-police-division-placements/)")
+    embed.add_field(name="Punitive Articles/Disciplinary Policy", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/79-san-andreas-state-police-punitive-articles-and-disciplinary-policy/)")
 	
     await ctx.send(embed=embed)
 	
@@ -58,6 +58,7 @@ async def help(ctx):
     embed.add_field(name="!cmds", value="Type this command in chat to get started, this should get you where you need to go.", inline=False)
 	
     await ctx.send(embed=embed)
+
 	
 # This command lists the base of commands for users to utilize
 @bot.command()
@@ -102,38 +103,19 @@ async def divisions(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="01 Administration", value="Lead by MT J. Loggins and MT A. Vyrilis", inline=False)
-    embed.add_field(name="02 Patrol", value="Lead by Lt. E. Burnett and 1stSgt A. Spahalski", inline=False)
-    embed.add_field(name="03 Traffic Enforcement Division", value="Lead by Sgt A. Mattis and Sgt R. Westhouse", inline=False)
-    embed.add_field(name="04 K-9 Unit", value="Lead by Cpl J. Boudreaux (Acting) and MT M. Anderson", inline=False)
-    embed.add_field(name="05 Crime Suppression Unit", value="Lead by Sgt R. Reddington and MT A. Vyrilis", inline=False)
-    embed.add_field(name="06 Aviation and Marine Unit", value="Lead by 1stSgt A. Spahalski and Col R. Brooks", inline=False)
-    embed.add_field(name="07 Criminal Investigations Unit", value="Lead by Cpl E. Cane (Acting) and Sgt M. Anderson", inline=False)
-    embed.add_field(name="08 Tactical Response Unit", value="Lead by Sgt M. Cortez and Cpl T. Woods", inline=False)
-    embed.add_field(name="09 Training Academy", value="Lead by Cpl B. Vance and MT J. Brown", inline=False)
-    embed.add_field(name="Divisional Info", value="!divinfo to learn more about each division", inline=False)
+    embed.add_field(name="01 Administration (!adm)", value="Lead by MT J. Loggins and MT A. Vyrilis", inline=False)
+    embed.add_field(name="02 Patrol (!pat)", value="Lead by Lt. E. Burnett and 1stSgt A. Spahalski", inline=False)
+    embed.add_field(name="03 Traffic Enforcement Division (!ted)", value="Lead by Sgt A. Mattis and Sgt R. Westhouse", inline=False)
+    embed.add_field(name="04 K-9 Unit (!k9)", value="Lead by Cpl J. Boudreaux (Acting) and MT M. Anderson", inline=False)
+    embed.add_field(name="05 Crime Suppression Unit (!csu)", value="Lead by Sgt R. Reddington and MT A. Vyrilis", inline=False)
+    embed.add_field(name="06 Aviation and Marine Unit (!amu)", value="Lead by 1stSgt A. Spahalski and Col R. Brooks", inline=False)
+    embed.add_field(name="07 Criminal Investigations Unit (!ciu)", value="Lead by Cpl E. Cane (Acting) and Sgt M. Anderson", inline=False)
+    embed.add_field(name="08 Tactical Response Unit (!tru)", value="Lead by Sgt M. Cortez and Cpl T. Woods", inline=False)
+    embed.add_field(name="09 Training Academy (!aca)", value="Lead by Cpl B. Vance and MT J. Brown", inline=False)
+    embed.set_footer(text="For more info: Utilize the commands posted next to each division")
 	
     await ctx.send(embed=embed)
 	
-# This command prints out a list of each division and info regarding them
-@bot.command()
-async def divinfo(ctx):
-    embed = discord.Embed(title="__State Police Divisional Info__", description="_List of commands to learn more about each division:_", color=0x3D59AB)
-	
-    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
-	
-    embed.add_field(name="!adm", value="Command for more info about Administration", inline=False)
-    embed.add_field(name="!pat", value="Command for more info about Patrol", inline=False)
-    embed.add_field(name="!ted", value="Command for more info about Traffic Enforcement", inline=False)
-    embed.add_field(name="!k9", value="Command for more info about K9", inline=False)
-    embed.add_field(name="!csu", value="Command for more info about Crime Suppression", inline=False)
-    embed.add_field(name="!amu", value="Command for more info about Aviation and Marine", inline=False)
-    embed.add_field(name="!ciu", value="Command for more info about Criminal Investigations", inline=False)
-    embed.add_field(name="!tru", value="Command for more info about Tactical Response", inline=False)
-    embed.add_field(name="!aca", value="Command for more info about Training", inline=False)
-	
-    await ctx.send(embed=embed)
-
 	
 	
 # This command lists information about the Administration Division	
