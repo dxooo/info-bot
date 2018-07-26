@@ -240,7 +240,7 @@ async def tru(ctx):
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
     embed.add_field(name="Leaders", value="Sergeant M. Cortez and Corporal T. Woods", inline=False)
-    embed.add_field(name="Description", value="The Tactical Response unit a unit comprised of highly trained marksmen, negotiators and specialists prepared to take on high priority situations with the utmost care and expertise.", inline=False)
+    embed.add_field(name="Description", value="The Tactical Response unit is a group comprised of highly trained marksmen, negotiators and specialists prepared to take on high priority situations with the utmost care and expertise.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
     embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSdDHdUCCGoGmoNdHNja9g7pFHhWLIIsTe6irmvJxCFEJpcfOg/viewform", inline=False)
 	
