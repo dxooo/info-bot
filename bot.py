@@ -28,7 +28,13 @@ async def links(ctx):
 	
     await ctx.send(embed=embed)
 
-	
+@bot.command()
+async def searchpc(ctx):
+    kek = message.content[9:]
+    with open('penal.txt', 'r') as searchfile:
+    	for line in searchfile:
+            if kek in line:
+            	await client.send_message(message.channel, line)	
 	
 	
 	
