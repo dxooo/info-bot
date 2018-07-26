@@ -30,7 +30,7 @@ async def links(ctx):
 
 @bot.command()
 async def searchpc(ctx):
-       await bot.say("Hello")
+    await bot.say("Testing123")
 	
 	
 	
