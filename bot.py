@@ -1,3 +1,8 @@
+# This bot requires no permissions in order to work besides being able to read and write in whatever channel it's left in
+# This bot was created for HighSpeed-Gaming's State Police Discord
+# This bot was created by brandon#9648 aka Sergeant Cortez
+# This bot is released as-is and further changes made are only to benefit the State Police
+
 import discord
 from discord.ext import commands
 
@@ -38,7 +43,9 @@ async def info(ctx):
 
     embed.add_field(name="Author", value="Sergeant M. Cortez (brandon#9648)")
     embed.add_field(name="Disclaimer", value="If the bot stops working an update is being pushed to it or I broke something.")
-    embed.add_field(name="Neat", value="'I made a bot to incentivize lazyness. - brandon'")
+    embed.add_field(name="Suggestions", value ="DM brandon#9648 to make suggestions about the future of the bot.")
+    embed.add_field(name="  ", value="'I made a bot to incentivize lazyness. - brandon'")
+
 
     await ctx.send(embed=embed)
 
