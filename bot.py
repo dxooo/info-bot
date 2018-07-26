@@ -72,6 +72,7 @@ async def cmds(ctx):
 
     embed.add_field(name="!sop", value="Gives the Standard Operating Procedures for the State Police", inline=False)
     embed.add_field(name="!vguide", value="Gives the Vehicle and Uniform Guidelines for the State Police", inline=False)
+    embed.add_field(name="!pcodes", value="Gives the San Andreas Penal Codes", inline=False)
     embed.add_field(name="!divisions", value="Gives the list of State Police Divisions and their Division Heads", inline=False)
     embed.add_field(name="!faq", value="Gives a list of info about Frequently Asked Questions", inline=False)
     embed.add_field(name="!info", value="Gives information about the bot", inline=False)
