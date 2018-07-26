@@ -221,7 +221,7 @@ async def amu(ctx):
     embed.add_field(name="Leaders", value="Sergeant A. Spahalski and Colonel R. Brooks", inline=False)
     embed.add_field(name="Description", value="This unit is capable of utilising aircraft and watercraft to assist ground units in situations such as high speed vehicle pursuits, search operations and general patrols from both sea and air", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
-    embed.add_field(name="Application:", value="https://docs.google.com/forms/d/e/1FAIpQLSedXP7YPHIExyo6JS1X-4tTbi14NoJIF4sCW9Q1SyPyO3konQ/viewform", inline=False)
+    embed.add_field(name="Application:", value="[AMU Application](https://docs.google.com/forms/d/e/1FAIpQLSedXP7YPHIExyo6JS1X-4tTbi14NoJIF4sCW9Q1SyPyO3konQ/viewform)", inline=False)
 	
     await ctx.send(embed=embed)
 		
