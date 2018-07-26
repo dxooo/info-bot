@@ -44,7 +44,7 @@ async def info(ctx):
     embed.add_field(name="Author", value="Sergeant M. Cortez (brandon#9648)")
     embed.add_field(name="Disclaimer", value="If the bot stops working an update is being pushed to it or I broke something.")
     embed.add_field(name="Suggestions", value ="DM brandon#9648 to make suggestions about the future of the bot.")
-    embed.add_field(name="  ", value="'I made a bot to incentivize lazyness. - brandon'")
+    embed.add_field(name="𐂃𐂃", value="'I made a bot to incentivize lazyness. - brandon'")
 
 
     await ctx.send(embed=embed)
