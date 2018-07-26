@@ -186,12 +186,16 @@ async def searchpc(ctx, *, arg):
 13.37 Intentionally Altering or Destroying a VIN
 13.38 Buying or Possessing a Vehicle with an Altered VIN
 13.39 Felony Speeding"""
-    us_inpt = arg  	  
+    us_inpt = arg  
+    found_list = []
+
+    for line in temporary.splitlines():
+      if us_inpt in line:
+        found_list.append(line)
+    await ctx.send(found_list)	  
     embed = discord.Embed(title="__State Police Quick Links__", description="_Used to convey quick links to important information about the State Police_", color=0x3D59AB)
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
-    for line in temporary.splitlines():
-  	if us_inpt in line:
-    	  embed.add_field(name=line, value="[Click Here]", inline=False)
+    embed.add_field(name=line, value="[Click Here]", inline=False)
     await ctx.send(embed=embed)
    
 	
