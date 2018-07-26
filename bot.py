@@ -1,7 +1,4 @@
 # This bot requires no permissions in order to work besides being able to read and write in whatever channel it's left in
-# This bot was created for HighSpeed-Gaming's State Police Discord
-# This bot was created by brandon#9648 aka Sergeant Cortez
-# This bot is released as-is and further changes made are only to benefit the State Police
 
 import discord
 from discord.ext import commands
