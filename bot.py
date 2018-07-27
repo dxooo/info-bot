@@ -48,8 +48,8 @@ async def links(ctx):
 
 
 @bot.command(pass_context=True)
-async def purge(ctx, number : int):
-    await ctx.purge(context.message.channel, limit=number)
+async def purge(ctx, amount):
+    await channel.purge(ctx.message.channel, limit=amount)
 
 @bot.command()
 async def searchpc(ctx, *, arg):
