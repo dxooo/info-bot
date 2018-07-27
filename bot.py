@@ -189,7 +189,7 @@ async def searchpc(ctx, *, arg):
     embed.add_field(name="Here's what we found based on your search:", value=', '.join(found_list), inline=False)
     await ctx.send(embed=embed)
     await asyncio.sleep(10) 
-    await ctx.channel.purge(limit=3)
+    await ctx.channel.delete_message(embed)
 	
 @bot.command()
 async def searchvc(ctx, *, arg):
