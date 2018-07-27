@@ -247,6 +247,7 @@ async def searchvc(ctx, *, arg):
 13.38 Buying or Possessing a Vehicle with an Altered VIN
 13.39 Felony Speeding"""
     us_inpt = arg  
+    err = "Nothing has been found based on your input"
     found_list = []
 
     for line in temporary.splitlines():
