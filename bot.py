@@ -2,6 +2,7 @@
 
 import discord
 from discord.ext import commands
+import asyncio
 
 bot = commands.Bot(command_prefix='!')
 
@@ -48,8 +49,16 @@ async def links(ctx):
 
 @bot.command()
 async def clear(ctx, amount: int):
-    await ctx.send("Received")
     await ctx.channel.purge(limit=amount)
+
+@bot.command()
+async def gay(ctx):
+    await ctx.send("Received")
+    await ctx.send("Received123")
+    await ctx.send("Received123456")
+    await asyncio.sleep(3) 
+    await ctx.channel.delete_messages(message)
+    await asyncio.sleep(4)
 
 @bot.command()
 async def searchpc(ctx, *, arg):
