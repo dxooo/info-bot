@@ -25,6 +25,7 @@ async def links(ctx):
     embed.add_field(name="Roster", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/22-san-andreas-state-police-roster/)", inline=False)
     embed.add_field(name="Divisional Placements", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/21-san-andreas-state-police-division-placements/)", inline=False)
     embed.add_field(name="Punitive Articles/Disciplinary Policy", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/79-san-andreas-state-police-punitive-articles-and-disciplinary-policy/)", inline=False)
+    embed.add_field(name="Transfers", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/forum/68-transfers/)", inline=False)
 	
     await ctx.send(embed=embed)
 
