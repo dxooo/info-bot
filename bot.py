@@ -191,7 +191,10 @@ async def searchpc(ctx, *, arg):
     await asyncio.sleep(2) 
     await ctx.message.delete()
     await ctx.message.delete(embed23)
+    await ctx.message.delete(embed)
     await ctx.channel.delete_messages(embed23)
+    await ctx.channel.delete_messages(embed)
+
 	
 @bot.command()
 async def searchvc(ctx, *, arg):
