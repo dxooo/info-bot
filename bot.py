@@ -55,11 +55,16 @@ async def clear(ctx, amount: int):
 
 @bot.command()
 async def status(ctx):
-    await ctx.send("Nigger")
     web = requests.get('http://status.highspeed-gaming.com/')
     soup = BeautifulSoup(web.content, 'html.parser')
+    servers = []
     for p in soup.find_all('a'):
-      await ctx.send(p.text)
+      servers.append(p.text)
+    embed = discord.Embed(title="__Highspeed-Gaming Status__", description=("Current Status of HSG Servers"), color=0x3D59AB)
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
+    embed.add_field(name="Server 1", value=servers[0], inline=False)
+    embed.add_field(name="Server 2", value=servers[1], inline=False)
+    await ctx.send(embed=embed)
 
 @bot.command()
 async def searchpc(ctx, *, arg):
