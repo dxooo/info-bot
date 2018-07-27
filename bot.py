@@ -49,6 +49,7 @@ async def links(ctx):
 
 @bot.command(pass_context=True)
 async def purge(ctx, amount):
+    await ctx.send("Received")
     await channel.purge(ctx.message.channel, limit=amount)
 
 @bot.command()
