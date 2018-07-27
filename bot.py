@@ -56,10 +56,10 @@ async def clear(ctx, amount: int):
 @bot.command()
 async def status(ctx):
     await ctx.send("Nigger")
-    #web = requests.get('http://status.highspeed-gaming.com/')
-    #soup = BeautifulSoup(web.content, 'html.parser')
-    #for p in soup.find_all('a'):
-     # await ctx.send(p.text)
+    web = requests.get('http://status.highspeed-gaming.com/')
+    soup = BeautifulSoup(web.content, 'html.parser')
+    for p in soup.find_all('a'):
+      await ctx.send(p.text)
 
 @bot.command()
 async def searchpc(ctx, *, arg):
