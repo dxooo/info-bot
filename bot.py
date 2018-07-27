@@ -1,6 +1,7 @@
 # This bot requires no permissions in order to work besides being able to read and write in whatever channel it's left in
 
 import discord
+import os
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='!')
@@ -48,9 +49,17 @@ async def links(ctx):
 
 
 @bot.command(pass_context=True)
-async def purge(ctx, amount):
-    await ctx.send("Received")
-    await channel.purge(ctx.message.channel, limit=amount)
+async def purge(ctx, number):
+    number = int(number)
+        author = ctx.message.author
+        mgs = []
+        number = int(number)
+        channel = ctx.message.channel
+        async for x in bot.logs_from((channel), limit =int(number+1)):
+            mgs.append(x)
+        await delete_messages(mgs)
+	await ctx.send('Success!', delete_after=4)
+
 
 @bot.command()
 async def searchpc(ctx, *, arg):
@@ -469,4 +478,4 @@ async def aca(ctx):
 
 	
 	
-bot.run('NDcxNzgwODg0MDE4ODg4NzE2.DjrfPw.QmjFc2hXFQIAQopyRNSSjwicY_M')
+bot.run(os.environ.get('TOKEN'))
