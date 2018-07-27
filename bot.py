@@ -160,8 +160,12 @@ async def searchpc(ctx, *, arg):
 12.12 Unlawful Possession of Firearms with Intent to Sell
 12.13 Unlawful Modification of a Firearm"""
     us_inpt = arg  
+    err = "Nothing has been found based on your input"
     found_list = []
 
+    if len(found_list) == 0:
+    	await ctx.send(err)
+	
     for line in temporary.splitlines():
       if us_inpt.lower() in line.lower():
         found_list.append(line)
