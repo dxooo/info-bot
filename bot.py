@@ -314,6 +314,7 @@ async def cmds(ctx):
     embed.add_field(name="!links", value="Gives a list of important links for the State Police", inline=False)
     embed.add_field(name="!divisions", value="Gives the list of State Police Divisions and their Division Heads", inline=False)
     embed.add_field(name="!faq", value="Gives a list of info about Frequently Asked Questions", inline=False)
+    embed.add_field(name="!status", value="Gives status of all HighSpeed-Gaming servers and their playercount", inline=False)
     embed.add_field(name="!info", value="Gives information about the bot", inline=False)
     embed.add_field(name="!cmds", value="Gives a message containing important commands for the bot", inline=False)
 
