@@ -57,7 +57,7 @@ async def gay(ctx):
     await ctx.send("Received123")
     await ctx.send("Received123456")
     await asyncio.sleep(3) 
-    await ctx.channel.delete_messages(message)
+    await message.delete()
     await asyncio.sleep(4)
 
 @bot.command()
