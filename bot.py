@@ -4,7 +4,6 @@ import discord
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='!')
-client = discord.Client()
 
 @bot.event
 async def on_ready():
@@ -50,7 +49,7 @@ async def links(ctx):
 
 @bot.command(pass_context=True)
 async def clear(ctx, amount):
-    await bot.purge_from(ctx.message.channel, limit=amount)
+    await ctx.purge_from(ctx.message.channel, limit=amount)
 
 @bot.command()
 async def searchpc(ctx, *, arg):
