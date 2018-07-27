@@ -11,6 +11,23 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('------')
+	
+# Greet new users and provide helpful information	
+@bot.event
+async def on_member_join(member):
+    print('User Joined')
+    embed = discord.Embed(title="__Welcome to the San Andreas State Police Discord!__", description="_Here are a few tips & tricks to get you started!_", color=0x3D59AB)
+	
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
+	
+    embed.add_field(name="Signing In", value="Make sure you head over to the #signing-in channel in order to be granted your tags, you will be asked for your Name and Unit Number, if you're a Cadet your callsign will start with an R-, otherwise it will be a P-", inline=False)
+    embed.add_field(name="Information", value="There are two main sources of important information within the discord, they can be found in two places. You can either find them in the top 6 text channels, (information - library,) or through this bot. !help to get started.", inline=False)
+    embed.add_field(name="Channels", value="Regardless if you're a Cadet or Trooper you will have access to the 'SASP General' category of channels, these are general hangout places with some self explanatory names, please make sure you're using each channel appropriately", inline=False)
+    embed.add_field(name="Questions?", value="If at any point you have any other questions please check our !faq or ask around, I am sure anyone would be willing to help!", inline=False)
+    embed.add_field(name="Bot Help", value="Please contact brandon#9658 (Sergeant Cortez,) if you need any assistance with the bot and using !help, !faq and !cmds doesn't get you to where you need to be, thanks!", inline=False)
+	
+    
+    await member.send(embed=embed)
 
 # This command prints out a list of quick links for ease of user
 @bot.command()
