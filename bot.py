@@ -187,10 +187,11 @@ async def searchpc(ctx, *, arg):
     embed = discord.Embed(title="__San Andreas Penal Code Lookup__", description=("It looks like you searched for "+us_inpt.title()), color=0x3D59AB)
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
     embed.add_field(name="Here's what we found based on your search:", value=', '.join(found_list), inline=False)
-    await ctx.send(embed=embed)
+    embed23 = await ctx.send(embed=embed)
     await asyncio.sleep(2) 
     await ctx.message.delete()
-    await ctx.channel.delete_messages(embed)
+    await ctx.message.delete(embed23)
+    await ctx.channel.delete_messages(embed23)
 	
 @bot.command()
 async def searchvc(ctx, *, arg):
