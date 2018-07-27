@@ -4,8 +4,6 @@ import discord
 from discord.ext import commands
 import os
 import asyncio
-from bs4 import BeautifulSoup
-import requests
 
 bot = commands.Bot(command_prefix='!')
 
