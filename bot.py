@@ -52,13 +52,13 @@ async def clear(ctx, amount: int):
     await ctx.channel.purge(limit=amount)
 
 @bot.command()
-async def gay(ctx, amount):
+async def gay(ctx, amount: int):
     await ctx.send("Received")
     await ctx.send("Received123")
     await ctx.send("Received123456")
-    await asyncio.sleep(3) 
-    await ctx.channel.delete_messages(amount)
-    await asyncio.sleep(4)
+    await asyncio.sleep(1) 
+    await ctx.channel.delete_messages(ctx.message)
+    await asyncio.sleep(2)
 
 @bot.command()
 async def searchpc(ctx, *, arg):
