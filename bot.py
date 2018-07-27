@@ -48,19 +48,6 @@ async def links(ctx):
     await ctx.send(embed=embed)
 
 
-@bot.command(pass_context=True)
-async def purge(ctx, number):
-    number = int(number)
-        author = ctx.message.author
-        mgs = []
-        number = int(number)
-        channel = ctx.message.channel
-        async for x in bot.logs_from((channel), limit =int(number+1)):
-            mgs.append(x)
-        await delete_messages(mgs)
-	await ctx.send('Success!', delete_after=4)
-
-
 @bot.command()
 async def searchpc(ctx, *, arg):
     temporary = """1.01 Inadmissible Defences
