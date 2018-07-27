@@ -139,9 +139,22 @@ async def searchpc(ctx, *, arg):
 12.09 Unlawful Possession of An Explosive Device
 12.10 Manufacture of an Explosive Device
 12.11 Unlawful Distribution of a Firearm
-12.12 Unlawful Possession of FIrearms with Intent to Sell
-12.13 Unlawful Modification of a Firearm
-13.01 Reckless Driving
+12.12 Unlawful Possession of Firearms with Intent to Sell
+12.13 Unlawful Modification of a Firearm"""
+    us_inpt = arg  
+    found_list = []
+
+    for line in temporary.splitlines():
+      if us_inpt in line:
+        found_list.append(line)	  
+    embed = discord.Embed(title="__San Andreas Penal Code Lookup__", description=("It looks like you searched for "+us_inpt), color=0x3D59AB)
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
+    embed.add_field(name="Here's what we found based on your search:", value=', '.join(found_list), inline=False)
+    await ctx.send(embed=embed)
+	
+@bot.command()
+async def searchvc(ctx, *, arg):
+    temporary = """13.01 Reckless Driving
 13.01(b) Reckless Driving Causing Bodily Injury
 13.02 Eluding / Evading a Peace Officer
 13.03 Hit and Run
@@ -192,7 +205,7 @@ async def searchpc(ctx, *, arg):
     for line in temporary.splitlines():
       if us_inpt in line:
         found_list.append(line)	  
-    embed = discord.Embed(title="__San Andreas Penal Code Lookup__", description=("It looks like you searched for "+us_inpt), color=0x3D59AB)
+    embed = discord.Embed(title="__San Andreas Vehicle Code Lookup__", description=("It looks like you searched for "+us_inpt), color=0x3D59AB)
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
     embed.add_field(name="Here's what we found based on your search:", value=', '.join(found_list), inline=False)
     await ctx.send(embed=embed)
