@@ -51,9 +51,9 @@ async def links(ctx):
 async def clear(ctx, number):
     mgs = [] 
     number = int(number) 
-    async for x in Client.logs_from(ctx.message.channel, limit = number):
+    async for x in bot.logs_from(ctx.message.channel, limit = number):
         mgs.append(x)
-    await Client.delete_messages(mgs)
+    await bot.delete_messages(mgs)
 
 @bot.command()
 async def searchpc(ctx, *, arg):
