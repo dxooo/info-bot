@@ -190,7 +190,7 @@ async def searchpc(ctx, *, arg):
     embed23 = await ctx.send(embed=embed)
     await asyncio.sleep(2) 
     await ctx.message.delete()
-    await ctx.message.delete(embed23)
+    await ctx.message.delete(err)
     await ctx.message.delete(embed)
     await ctx.channel.delete_messages(embed23)
     await ctx.channel.delete_messages(embed)
