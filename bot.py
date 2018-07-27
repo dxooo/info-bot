@@ -1,7 +1,6 @@
 # This bot requires no permissions in order to work besides being able to read and write in whatever channel it's left in
 
 import discord
-import os
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='!')
