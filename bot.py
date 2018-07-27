@@ -2,6 +2,7 @@
 
 import discord
 from discord.ext import commands
+import os
 import asyncio
 
 bot = commands.Bot(command_prefix='!')
@@ -472,4 +473,4 @@ async def aca(ctx):
 
 	
 	
-bot.run('NDcxNzgwODg0MDE4ODg4NzE2.DjrfPw.QmjFc2hXFQIAQopyRNSSjwicY_M')
+bot.run(os.environ.get('TOKEN'))
