@@ -48,6 +48,7 @@ async def links(ctx):
 
 @bot.command()
 async def clear(ctx, amount: int):
+    await ctx.send("Received")
     await ctx.channel.purge(limit=amount)
 
 @bot.command()
