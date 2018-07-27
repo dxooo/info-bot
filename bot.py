@@ -255,6 +255,8 @@ async def cmds(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 
+    embed.add_field(name="!searchpc", value="Allows a user to search through the list of Penal Codes," inline=False)
+    embed.add_field(name="!searchvc", value="Allows a user to search through the list of Vehicle Codes," inline=False)	
     embed.add_field(name="!links", value="Gives a list of important links for the State Police", inline=False)
     embed.add_field(name="!divisions", value="Gives the list of State Police Divisions and their Division Heads", inline=False)
     embed.add_field(name="!faq", value="Gives a list of info about Frequently Asked Questions", inline=False)
