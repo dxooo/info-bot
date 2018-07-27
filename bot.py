@@ -4,6 +4,8 @@ import discord
 from discord.ext import commands
 import os
 import asyncio
+from bs4 import BeautifulSoup
+import requests
 
 bot = commands.Bot(command_prefix='!')
 
@@ -52,6 +54,12 @@ async def links(ctx):
 async def clear(ctx, amount: int):
     await ctx.channel.purge(limit=amount)
 
+@bot.command()
+async def status(ctx):
+    web = requests.get('http://status.highspeed-gaming.com/')
+    soup = BeautifulSoup(web.content, 'html.parser')
+    for p in soup.find_all('a'):
+      await ctx.send(p.text)
 
 @bot.command()
 async def searchpc(ctx, *, arg):
