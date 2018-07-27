@@ -47,7 +47,7 @@ async def links(ctx):
     await ctx.send(embed=embed)
 
 
-@Client.command(pass_context = True)
+@bot.command()
 async def clear(ctx, number):
     mgs = [] 
     number = int(number) 
