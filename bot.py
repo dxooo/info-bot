@@ -163,12 +163,13 @@ async def searchpc(ctx, *, arg):
     err = "Nothing has been found based on your input"
     found_list = []
 
-    if len(found_list) == 0:
-    	await ctx.send(err)
 	
     for line in temporary.splitlines():
       if us_inpt.lower() in line.lower():
         found_list.append(line)
+
+    if len(found_list) == 0:
+    	await ctx.send(err)
 
     embed = discord.Embed(title="__San Andreas Penal Code Lookup__", description=("It looks like you searched for "+us_inpt.title()), color=0x3D59AB)
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
