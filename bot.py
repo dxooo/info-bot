@@ -46,6 +46,9 @@ async def links(ctx):
 	
     await ctx.send(embed=embed)
 
+@bot.command()
+async def clear(ctx, amount: int):
+    await ctx.channel.purge(limit=amount)
 
 @bot.command()
 async def searchpc(ctx, *, arg):
