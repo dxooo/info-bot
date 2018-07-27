@@ -400,7 +400,7 @@ async def ciu(ctx):
 	
     embed.add_field(name="Leaders", value="Corporal E. Cane (Acting Commander) and Sergeant M. Anderson", inline=False)
     embed.add_field(name="Description", value="The Criminal Investigations Unit is a group of highly trained investigators who investigate vast amount of crimes. We investigate fraudulent action, crime scenes and other criminal actions. We take our investigations seriously, do you?", inline=False)
-    embed.add_field(name="Application Status", value="Open", inline=False)
+    embed.add_field(name="Application Status", value="Closed", inline=False)
     embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSfmznYvwyrIesdVWKy0_oshviC7Xswj49utcygyGnwKFw1ukw/viewform)", inline=False)
 	
     await ctx.send(embed=embed)
