@@ -1,4 +1,7 @@
 # This bot requires no permissions in order to work besides being able to read and write in whatever channel it's left in
+pip install beautifulsoup4
+pip install requests
+
 
 import discord
 from discord.ext import commands
