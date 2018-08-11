@@ -388,7 +388,7 @@ async def divisions(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="01 Administration (!adm)", value="Lead by MT J. Loggins and MT A. Vyrilis", inline=False)
+    embed.add_field(name="01 Administration (!adm)", value="Lead by MT A. Vyrilis", inline=False)
     embed.add_field(name="02 Patrol (!pat)", value="Lead by Lt. E. Burnett and 1stSgt A. Spahalski", inline=False)
     embed.add_field(name="03 Traffic Enforcement Division (!ted)", value="Lead by Sgt A. Mattis", inline=False)
     embed.add_field(name="04 K-9 Unit (!k9)", value="Lead by Cpl J. Boudreaux (Acting) and MT M. Anderson", inline=False)
@@ -396,7 +396,7 @@ async def divisions(ctx):
     embed.add_field(name="06 Aviation and Marine Unit (!amu)", value="Lead by 1stSgt A. Spahalski and Col R. Brooks", inline=False)
     embed.add_field(name="07 Criminal Investigations Unit (!ciu)", value="Lead by Cpl E. Cane (Acting) and Sgt M. Anderson", inline=False)
     embed.add_field(name="08 Tactical Response Unit (!tru)", value="Lead by Sgt M. Cortez and Cpl T. Woods", inline=False)
-    embed.add_field(name="09 Training Academy (!aca)", value="Lead by Cpl B. Vance and MT J. Brown", inline=False)
+    embed.add_field(name="09 Training Academy (!aca)", value="Lead by Cpl B. Vance and Cpl J. Brown and Cpl T. Woods", inline=False)
     embed.set_footer(text="For more info: Utilize the commands posted next to each division")
 	
     await ctx.send(embed=embed)
