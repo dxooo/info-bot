@@ -410,7 +410,7 @@ async def adm(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="Leaders", value="Master Trooper J. Loggins and Master Trooper A. Vyrilis", inline=False)
+    embed.add_field(name="Leaders", value="Master Trooper A. Vyrilis", inline=False)
     embed.add_field(name="Description", value="The Administration Division was created to handle most of the duties regarding paperwork and behind the scene personas of the Department. This team ensures to keep the department up to date.", inline=False)
     embed.add_field(name="Application Status", value="Closed", inline=False)
 	
@@ -521,7 +521,7 @@ async def aca(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="Leaders", value="Corporal B. Vance and Master Trooper J. Brown", inline=False)
+    embed.add_field(name="Leaders", value="Corporal B. Vance and Master Trooper J. Brown and Corporal T. Woods", inline=False)
     embed.add_field(name="Description", value="Training Academy provides a training pipeline for the freshly accepted Cadets to prepare them.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
     embed.add_field(name="Application: (FTO)", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSfL3z6xym5di9cqYERnRmvfygD4BRCuHv1mYB3p1e_icqGPdQ/viewform)", inline=False)
