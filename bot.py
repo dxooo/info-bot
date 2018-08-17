@@ -105,6 +105,8 @@ async def status(ctx):
 
     embed.add_field(name="Server 2", value=servers[1], inline=False)
     embed.add_field(name="S2 - Players", value=', '.join(playerss2), inline=False)
+
+    embed.add_field(name="Disclaimer", value="If it shows both servers as empty, it's most likely wrong. Blame status.highspeed-gaming.com", inline=False)
     await ctx.send(embed=embed)
 
 @bot.command()
