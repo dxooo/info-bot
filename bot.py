@@ -1,12 +1,15 @@
 # This bot requires no permissions in order to work besides being able to read and write in whatever channel it's left in
 import discord
 from discord.ext import commands
+from discord.ext.commands.cooldowns import BucketType
 import os
+import time
 import asyncio
 import requests
 from bs4 import BeautifulSoup
 
 bot = commands.Bot(command_prefix='!')
+support_id = 1
 
 @bot.event
 async def on_ready():
@@ -16,7 +19,66 @@ async def on_ready():
     print('------')
     game = discord.Game("Assisting the State Police")
     await bot.change_presence(status=discord.Status.online, activity=game)
+	
 
+@bot.event
+async def on_command_error(ctx, exc):
+    if isinstance(exc, commands.CommandOnCooldown):
+      await ctx.send("You can't use this command right now, as it's on cooldown. " + ctx.author.mention)	
+	
+@commands.cooldown(1, 60.0, BucketType.user) 	
+@bot.command()
+async def support(ctx, * ,arg):
+    global support_id
+    await ctx.message.delete()
+    guild = ctx.message.guild
+    overwrites = {
+    guild.default_role: discord.PermissionOverwrite(read_messages=False),
+    ctx.author: discord.PermissionOverwrite(read_messages=True),
+    guild.me: discord.PermissionOverwrite(read_messages=True)
+    }
+    category = discord.utils.get(ctx.guild.categories, name="Support")
+    sup_channel = await guild.create_text_channel("Support_" + str(support_id),overwrites = overwrites, category=category)
+    await sup_channel.edit(topic = ctx.author.id)
+
+    support_id += 1
+    help = await sup_channel.send("You have asked for help with: " + arg )
+    time.sleep(1)
+    info_main = await sup_channel.send("Please use this channel to request any further support on your matter")
+    time.sleep(1)
+    solved_info = await sup_channel.send("If your issue has been resolved, you are free to close your ticket by typing **__!solved__** in the chat")
+    time.sleep(1)
+    extra_info = await sup_channel.send("Our staff will assist you as soon as possible " + ctx.author.mention)
+
+    time.sleep(1)
+    await help.pin()
+    time.sleep(1)
+    await solved_info.pin()
+
+@bot.command()
+async def solved(ctx):	
+    if ctx.channel.topic == str(ctx.author.id):
+      await ctx.send("Channel removal permission authorized. Channel will be removed in 10 seconds.")
+      time.sleep(10)
+      await ctx.channel.delete()
+    else:
+      await ctx.send("You don't have permission to remove this channel.")
+	
+@bot.command()
+async def poll(ctx, arg1):
+    embed = discord.Embed(title="__"+arg1+"__", description="Please vote below!", color=0x3D59AB)
+	
+    embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
+	
+    embed.add_field(name="Yes!", value="React with 👍", inline=False)
+    embed.add_field(name="No!", value="React with 👎", inline=False)
+    embed.add_field(name="I'm not sure!", value="React with 🤷", inline=False)
+    embed.add_field(name="Started By", value=ctx.author.mention, inline=False)
+    await ctx.message.delete()
+    msg = await ctx.send(embed=embed)
+    await msg.add_reaction('👍')
+    await msg.add_reaction('👎')
+    await msg.add_reaction('🤷')
 	
 # Greet new users and provide helpful information	
 @bot.event
