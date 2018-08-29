@@ -457,7 +457,7 @@ async def divisions(ctx):
     embed.add_field(name="03 Traffic Enforcement Division (!ted)", value="Lead by Sgt A. Mattis", inline=False)
     embed.add_field(name="04 K-9 Unit (!k9)", value="Lead by Cpl J. Boudreaux (Acting) and MT M. Anderson", inline=False)
     embed.add_field(name="05 Crime Suppression Unit (!csu)", value="Lead by Sgt R. Reddington and MT A. Vyrilis", inline=False)
-    embed.add_field(name="06 Aviation and Marine Unit (!amu)", value="Lead by 1stSgt A. Spahalski and ST G. Green", inline=False)
+    embed.add_field(name="06 Aviation and Marine Unit (!amu)", value="Lead by 1stSgt A. Spahalski and MT G. Green", inline=False)
     embed.add_field(name="07 Criminal Investigations Unit (!ciu)", value="Lead by Sgt M. Anderson", inline=False)
     embed.add_field(name="08 Tactical Response Unit (!tru)", value="Lead by Sgt M. Cortez and Cpl T. Woods", inline=False)
     embed.add_field(name="09 Training Academy (!aca)", value="Lead by Cpl B. Vance and Cpl J. Brown and Cpl T. Woods", inline=False)
@@ -503,7 +503,7 @@ async def ted(ctx):
 	
     embed.add_field(name="Leaders", value="Sergeant A. Mattis", inline=False)
     embed.add_field(name="Description", value="The Traffic Enforcement Division is a specialized division within the San Andreas State Police that was originally created to combat driving under the influence and careless driving in general", inline=False)
-    embed.add_field(name="Application Status", value="Closed", inline=False)
+    embed.add_field(name="Application Status", value="Open until the 31st", inline=False)
     embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSf2rLH6NgRqE9-IgNjgEJNc-68b-u1OYA_y08EkBKFDw2Y51w/closedform)", inline=False)
 	
     await ctx.send(embed=embed)
@@ -543,7 +543,7 @@ async def amu(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="Leaders", value="Sergeant A. Spahalski and Senior Trooper G. Green", inline=False)
+    embed.add_field(name="Leaders", value="First Sergeant A. Spahalski and Master Trooper G. Green", inline=False)
     embed.add_field(name="Description", value="This unit is capable of utilising aircraft and watercraft to assist ground units in situations such as high speed vehicle pursuits, search operations and general patrols from both sea and air", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
     embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSedXP7YPHIExyo6JS1X-4tTbi14NoJIF4sCW9Q1SyPyO3konQ/viewform)", inline=False)
