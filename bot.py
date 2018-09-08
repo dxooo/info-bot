@@ -452,15 +452,15 @@ async def divisions(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="01 Administration (!adm)", value="Lead by MT A. Vyrilis", inline=False)
-    embed.add_field(name="02 Patrol (!pat)", value="Lead by 1stSgt A. Spahalski", inline=False)
+    embed.add_field(name="01 Administration (!adm)", value="Lead by Cpl. A. Vyrilis", inline=False)
+    embed.add_field(name="02 Patrol (!pat)", value="Lead by Lt. A. Spahalski", inline=False)
     embed.add_field(name="03 Traffic Enforcement Division (!ted)", value="Lead by Sgt A. Mattis", inline=False)
-    embed.add_field(name="04 K-9 Unit (!k9)", value="Lead by Cpl J. Boudreaux (Acting) and MT M. Anderson", inline=False)
-    embed.add_field(name="05 Crime Suppression Unit (!csu)", value="Lead by Sgt R. Reddington and MT A. Vyrilis", inline=False)
+    embed.add_field(name="04 K-9 Unit (!k9)", value="Lead by ???", inline=False)
+    embed.add_field(name="05 Crime Suppression Unit (!csu)", value="Lead by Sgt R. Reddington and Cpl. A. Vyrilis", inline=False)
     embed.add_field(name="06 Aviation and Marine Unit (!amu)", value="Lead by Corporal G. Green", inline=False)
     embed.add_field(name="07 Criminal Investigations Unit (!ciu)", value="Lead by Sgt M. Anderson", inline=False)
-    embed.add_field(name="08 Tactical Response Unit (!tru)", value="Lead by Sgt M. Cortez and Cpl T. Woods", inline=False)
-    embed.add_field(name="09 Training Academy (!aca)", value="Lead by Cpl B. Vance and Cpl J. Brown and Cpl T. Woods", inline=False)
+    embed.add_field(name="08 Tactical Response Unit (!tru)", value="Lead by Sgt M. Cortez and Sgt T. Woods", inline=False)
+    embed.add_field(name="09 Training Academy (!aca)", value="Lead by Cpl B. Vance and Cpl J. Brown and Sgt T. Woods", inline=False)
     embed.set_footer(text="For more info: Utilize the commands posted next to each division")
 	
     await ctx.send(embed=embed)
@@ -474,7 +474,7 @@ async def adm(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="Leaders", value="Master Trooper A. Vyrilis", inline=False)
+    embed.add_field(name="Leaders", value="Corporal A. Vyrilis", inline=False)
     embed.add_field(name="Description", value="The Administration Division was created to handle most of the duties regarding paperwork and behind the scene personas of the Department. This team ensures to keep the department up to date.", inline=False)
     embed.add_field(name="Application Status", value="Closed", inline=False)
 	
@@ -487,7 +487,7 @@ async def pat(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="Leaders", value="First Sergeant A. Spahalski", inline=False)
+    embed.add_field(name="Leaders", value="Lieutenant A. Spahalski", inline=False)
     embed.add_field(name="Description", value="The main division within the State Police, housing every member of the State Police regardless of status within other divisions", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
     embed.add_field(name="Application:", value="[Click Here](http://sasp.highspeed-gaming.com/index.php?/topic/25-san-andreas-state-police-application-format/)", inline=False)
@@ -515,7 +515,7 @@ async def k9(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="Leaders", value="Corporal J. Boudreaux (Acting Commander) and Master Trooper M. Anderson", inline=False)
+    embed.add_field(name="Leaders", value="???", inline=False)
     embed.add_field(name="Description", value="The mission of the K-9 unit is to provide assistance to on duty law enforcement using teamwork and a superior sense of smell and hearing. The K-9 unit works as a cohesive unit providing assistance in apprehension, searches, obtaining warrants,  locating narcotics, weapons, or even explosive devices.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
     embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/1HyFeo6WhtFltg6sLs_GVi6fzTqjBAe3F9JQiePajH3M/viewform?edit_requested=true)", inline=False)
@@ -529,7 +529,7 @@ async def csu(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="Leaders", value="Sergeant R. Reddington and Master Trooper A. Vyrilis", inline=False)
+    embed.add_field(name="Leaders", value="Sergeant R. Reddington and Corporal A. Vyrilis", inline=False)
     embed.add_field(name="Description", value="The Crime Suppression Unit is a specialized investigative unit within the San Andreas State Police Department whose primary role is to monitor, document, investigate the crime, attempt to identify and arrest perpetrators, and prevent further criminal activity.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
     embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSeAKv_TobhZFomfHyl-oUpTN2i5wHxjvsXND9AJCCbfZz7urA/viewform)", inline=False)
@@ -571,7 +571,7 @@ async def tru(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="Leaders", value="Sergeant M. Cortez and Corporal T. Woods", inline=False)
+    embed.add_field(name="Leaders", value="Sergeant M. Cortez and Sergeant T. Woods", inline=False)
     embed.add_field(name="Description", value="The Tactical Response unit is a group comprised of highly trained marksmen, negotiators and specialists prepared to take on high priority situations with the utmost care and expertise.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
     embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSdDHdUCCGoGmoNdHNja9g7pFHhWLIIsTe6irmvJxCFEJpcfOg/viewform)", inline=False)
@@ -585,7 +585,7 @@ async def aca(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="Leaders", value="Corporal B. Vance and Corporal J. Brown and Corporal T. Woods", inline=False)
+    embed.add_field(name="Leaders", value="Corporal B. Vance and Corporal J. Brown and Sergeant T. Woods", inline=False)
     embed.add_field(name="Description", value="Training Academy provides a training pipeline for the freshly accepted Cadets to prepare them.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
     embed.add_field(name="Application: (FTO)", value="[Click Here](https://docs.google.com/forms/d/e/1FAIpQLSfL3z6xym5di9cqYERnRmvfygD4BRCuHv1mYB3p1e_icqGPdQ/viewform)", inline=False)
