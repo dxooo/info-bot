@@ -455,9 +455,9 @@ async def divisions(ctx):
     embed.add_field(name="01 Administration (!adm)", value="Lead by Cpl. A. Vyrilis", inline=False)
     embed.add_field(name="02 Patrol (!pat)", value="Lead by Lt. A. Spahalski", inline=False)
     embed.add_field(name="03 Traffic Enforcement Division (!ted)", value="Lead by Sgt A. Mattis", inline=False)
-    embed.add_field(name="04 K-9 Unit (!k9)", value="Lead by ???", inline=False)
+    embed.add_field(name="04 K-9 Unit (!k9)", value="Lead by MT. M. Anderson and MT. B. Thomas", inline=False)
     embed.add_field(name="05 Crime Suppression Unit (!csu)", value="Lead by Sgt R. Reddington and Cpl. A. Vyrilis", inline=False)
-    embed.add_field(name="06 Aviation and Marine Unit (!amu)", value="Lead by Corporal G. Green", inline=False)
+    embed.add_field(name="06 Aviation and Marine Unit (!amu)", value="Lead by Corporal G. Green and LT. A. Spahalski", inline=False)
     embed.add_field(name="07 Criminal Investigations Unit (!ciu)", value="Lead by Sgt M. Anderson", inline=False)
     embed.add_field(name="08 Tactical Response Unit (!tru)", value="Lead by Sgt M. Cortez and Sgt T. Woods", inline=False)
     embed.add_field(name="09 Training Academy (!aca)", value="Lead by Cpl B. Vance and Cpl J. Brown and Sgt T. Woods", inline=False)
@@ -515,10 +515,10 @@ async def k9(ctx):
 	
     embed.set_author(name="State Police Info Bot", icon_url="https://cdn.discordapp.com/attachments/393324031505465344/471855906699739136/sasp_logo_updated_2018.png")
 	
-    embed.add_field(name="Leaders", value="???", inline=False)
+    embed.add_field(name="Leaders", value="Master Trooper Mike Anderson and Master Trooper Ben Thomas", inline=False)
     embed.add_field(name="Description", value="The mission of the K-9 unit is to provide assistance to on duty law enforcement using teamwork and a superior sense of smell and hearing. The K-9 unit works as a cohesive unit providing assistance in apprehension, searches, obtaining warrants,  locating narcotics, weapons, or even explosive devices.", inline=False)
     embed.add_field(name="Application Status", value="Open", inline=False)
-    embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/1HyFeo6WhtFltg6sLs_GVi6fzTqjBAe3F9JQiePajH3M/viewform?edit_requested=true)", inline=False)
+    embed.add_field(name="Application:", value="[Click Here](https://docs.google.com/forms/d/1UBcPjzd3yGKHyc1CiXVezaFiR7emVB0WxFTnk81P5dQ/viewform?edit_requested=true)", inline=False)
 	
     await ctx.send(embed=embed)
 	
