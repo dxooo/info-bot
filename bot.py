@@ -329,7 +329,6 @@ async def searchvc(ctx, *, arg):
 13.17 Driving on Sidewalk   |   Infraction  |   100$ Fine
 13.18 Interfering with Driver's Control of Vehicle  |   Misdemeanor/Infraction  |   Up to 2 Minutes / 150$ Fine
 13.19 Following too Closely |   Infraction  |   150$ Fine
-13.20 Motorcycles: Lane Splitting   |   Infraction  |   150$ Fine
 13.21 Illegal Passing   |   Infraction  |   150$ Fine
 13.22 Unsafe Operation of Emergency Vehicle    
 13.23 Driving Without Headlights at Night   |   Infraction  |   150$ Fine
