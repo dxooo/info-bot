@@ -131,6 +131,7 @@ async def embe(ctx,ar,arg,arg2,arg3,arg4):
     await asyncio.sleep(2) 
     await ctx.message.delete()
 
+@commands.has_role('Lieutenant') 
 @bot.command()
 async def clear(ctx, amount: int):
     await ctx.channel.purge(limit=amount)
